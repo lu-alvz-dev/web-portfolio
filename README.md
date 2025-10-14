@@ -67,9 +67,9 @@ I’m actively seeking an opportunity as a **Junior / Entry-Level Web Developer*
 
 ## 🤝 Let’s Connect
 
-📩 Email: [your-email@example.com]  
-💼 LinkedIn: [linkedin.com/in/your-profile](#)  
-💻 GitHub: [github.com/your-username](#)
+📩 Email: [email@example.com]  
+💼 LinkedIn: [linkedin.com/in/profile](#)  
+💻 GitHub: [github.com/username](#)
 
 ---
 
