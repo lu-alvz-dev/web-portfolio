@@ -162,6 +162,11 @@ body {
   padding: 2rem;
   border-radius: 9px;
   height: 16rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-icons:hover {
+  transform: scale(1.1);
 }
 
 .tech-icons i {
@@ -208,7 +213,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 9px;
-  border: 0.03rem solid #dbbb37;
+  border: 0.03rem solid #887f5e;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
 
