@@ -75,7 +75,6 @@ body {
   line-height: 0.25;
   font-weight: 700;
   padding: 0.5rem;
-  /* margin-left: 0.25rem; */
   color: #735934;
   text-transform: uppercase;
 }
@@ -103,13 +102,11 @@ body {
 .btn--contact:visited {
   background-color: #503002;
   color: #fff;
-  /* text-decoration: none; */
 }
 
 .btn--contact:hover,
 .btn--contact:active {
   background-color: #b69305fc;
-  /* text-decoration: none; */
 }
 
 .btn--aboutMe:link,
@@ -146,7 +143,7 @@ body {
   grid-column: 1/-1;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 8rem;
   align-items: center;
   gap: 2rem;
@@ -178,8 +175,6 @@ body {
   min-width: 10.4rem;
   border-radius: 50%;
   background-color: #fff;
-
-  /* border: 0.03rem solid #dbbb37; */
 }
 .tech-icons i:last-child {
   margin-right: 0;
@@ -205,27 +200,63 @@ body {
 
 .projects-container {
   display: flex;
+  justify-content: center;
   gap: 4.8rem;
+  flex-wrap: wrap;
 }
 
 .projects-container img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 9px;
   border: 0.03rem solid #887f5e;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
 
+/* Make the container responsive and set up the grid to overlap the image and descrption*/
+.screenshot {
+  display: grid;
+  grid-template-areas: "overlap-area";
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+/* Image Responsive and overlaping */
+.project-queedo {
+  grid-area: overlap-area;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/*  Responsive Overlaping Div and Sized to the Image */
+.description {
+  grid-area: overlap-area;
+  width: 100%;
+  height: 100%;
+  background-color: #d9b528fc;
+  padding: 1rem;
+}
+
+/* Description text */
+.description p {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Showing description with hover Effect */
+.screenshot:hover .description {
+  z-index: 2;
+}
+
 /*Responsive  */
 
 @media (max-width: 821px) {
-  /* .hero {
-    grid-template-columns: repeat(auto-fit, minmax(1050px, 1fr));
-    gap: 3.2rem;
-    column-gap: 0;
-  } */
-
   .hero-avatar-box {
     grid-column: 1/2;
     grid-row: 1/2;
