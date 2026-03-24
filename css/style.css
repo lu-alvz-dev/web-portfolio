@@ -20,6 +20,9 @@ body {
   color: #503002;
   background-color: #deded1;
 }
+
+/** Hero **/
+
 .section-wrapper {
   overflow: hidden;
   max-width: 120rem;
@@ -198,6 +201,10 @@ body {
   align-items: center;
 }
 
+.projects-heading {
+  font-size: 4rem;
+}
+
 .projects-container {
   display: flex;
   justify-content: center;
@@ -252,6 +259,79 @@ body {
 /* Showing description with hover Effect */
 .screenshot:hover .description {
   z-index: 2;
+}
+
+/*Contact Section*/
+.section-contact {
+  padding: 9.6rem 0;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  /**border: 0.03rem solid #dbbb37;**/
+  border-radius: 9.5px;
+  background-image: linear-gradient(to right bottom, #e6cf73, #dbbb37);
+  overflow: hidden;
+  height: 50rem;
+}
+
+.contact-text {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #503002;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  color: #503002;
+  margin-bottom: 3.2rem;
+}
+
+.call-to-action {
+  font-size: 2rem;
+  font-weight: 450;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+
+.remote {
+  font-size: 2rem;
+  font-weight: 650;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+
+.btn--linkedin:link,
+.btn--linkedin:visited {
+  background-color: #503002;
+  color: #deded1;
+}
+
+.btn--linkedin:hover,
+.btn--linkedin:active {
+  background-color: #deded1;
+  color: #503002;
+  box-shadow: inset 0 0 0 3px#503002;
+}
+
+.respond {
+  margin-top: 3.2rem;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.contact-img {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(193, 162, 70, 0.4),
+      rgba(182, 147, 5, 0.4)
+    ),
+    url("../assets/images/picmagic_1760764882887.png");
+
+  background-size: cover;
+  background-position: center;
 }
 
 /*Responsive  */
