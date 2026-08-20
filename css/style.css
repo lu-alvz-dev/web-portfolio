@@ -1,6 +1,4 @@
-/* ================================
-   Base
-   ================================ */
+/* Base styles */
 
 :root {
   --color-background: #deded1;
@@ -80,9 +78,7 @@ section {
   padding: 9.6rem 0;
 }
 
-/* ================================
-   Navigation
-   ================================ */
+/* Navigation */
 
 .site-header {
   position: fixed;
@@ -145,9 +141,7 @@ section {
   border-radius: 2px;
 }
 
-/* ================================
-   Hero
-   ================================ */
+/* Hero */
 
 .section-hero {
   min-height: 100vh;
@@ -222,9 +216,7 @@ section {
   border-radius: 50%;
 }
 
-/* ================================
-   Buttons
-   ================================ */
+/* Buttons */
 
 .btn {
   display: inline-flex;
@@ -277,9 +269,7 @@ section {
   border-color: var(--color-accent-dark);
 }
 
-/* ================================
-   Section headers
-   ================================ */
+/* Section headers */
 
 .section-header {
   max-width: 72rem;
@@ -313,27 +303,23 @@ section {
   line-height: 1.7;
 }
 
-/* ================================
-   Projects
-   ================================ */
+/* Projects */
 
 .section-work {
   border-top: 1px solid var(--color-border);
 }
 
 .projects {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.4rem;
 }
 
 .project {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(28rem, 0.8fr);
-  gap: 4.8rem;
-  align-items: center;
-
-  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 2.4rem;
 
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -343,12 +329,22 @@ section {
 }
 
 .project-featured {
-  grid-template-columns: minmax(0, 1.3fr) minmax(28rem, 0.7fr);
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(28rem, 0.6fr);
+  align-items: center;
+  gap: 4.8rem;
+
   padding: 4rem;
+
+  background-color: var(--color-white);
 }
 
 .project-image {
   overflow: hidden;
+
+  aspect-ratio: 16 / 9;
 
   background-color: var(--color-white);
   border: 1px solid var(--color-border);
@@ -357,9 +353,10 @@ section {
 
 .project-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
 
   object-fit: cover;
+  object-position: top center;
 
   transition: transform 0.3s ease;
 }
@@ -370,6 +367,7 @@ section {
 
 .project-content {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -386,9 +384,13 @@ section {
 
 .project-title {
   color: var(--color-text);
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.project-featured .project-title {
+  font-size: 3.2rem;
 }
 
 .project-description {
@@ -419,12 +421,17 @@ section {
   font-weight: 500;
 }
 
+.project-featured .project-stack li {
+  background-color: var(--color-surface);
+}
+
 .project-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1.6rem;
 
-  margin-top: 2.4rem;
+  margin-top: auto;
+  padding-top: 2.4rem;
 }
 
 .project-actions a,
@@ -675,9 +682,14 @@ section {
     height: 14rem;
   }
 
-  .project,
-  .project-featured {
+  .projects {
     grid-template-columns: 1fr;
+  }
+
+  .project-featured {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+
     gap: 3.2rem;
     padding: 2.4rem;
   }
