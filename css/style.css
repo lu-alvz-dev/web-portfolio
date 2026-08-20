@@ -576,6 +576,7 @@ section {
 
   padding: 0;
 
+  overflow-y: auto;
   color: var(--color-text);
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -644,6 +645,20 @@ section {
 
 .modal-body p {
   margin-top: 0.8rem;
+}
+
+.modal-body ul {
+  display: grid;
+  gap: 0.8rem;
+
+  margin-top: 1.2rem;
+  padding-left: 2rem;
+
+  list-style: disc;
+}
+
+.modal-body li {
+  padding-left: 0.4rem;
 }
 
 /* Responsive */

@@ -395,7 +395,11 @@
     </footer>
 
     <!-- Project details modal -->
-    <dialog class="project-modal" id="project-modal">
+    <dialog
+      class="project-modal"
+      id="project-modal"
+      aria-labelledby="project-modal-title"
+    >
       <div class="modal-content">
         <button
           class="modal-close"
@@ -407,7 +411,7 @@
 
         <p class="section-label">Project details</p>
 
-        <h2 class="modal-title"></h2>
+        <h2 class="modal-title" id="project-modal-title"></h2>
 
         <div class="modal-body"></div>
       </div>
