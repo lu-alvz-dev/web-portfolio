@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
     <header class="site-header">
       <nav class="navbar" aria-label="Main navigation">
         <a class="navbar-logo" href="#home">Luis Alvarez</a>
@@ -42,7 +43,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <!-- Hero -->
       <section id="home" class="section section-hero">
         <div class="section-wrapper">
@@ -79,6 +80,8 @@
                 class="hero-avatar"
                 src="./assets/images/picmagic_1760468146670.png"
                 alt="Luis Alvarez"
+                width="200"
+                height="200"
               />
             </div>
           </div>
@@ -124,7 +127,10 @@
                   student dashboards, and persistent learning analytics.
                 </p>
 
-                <ul class="project-stack" aria-label="Technologies used">
+                <ul
+                  class="project-stack"
+                  aria-label="Technologies used in DerivaLab"
+                >
                   <li>React</li>
                   <li>Node.js</li>
                   <li>Express</li>
@@ -136,6 +142,7 @@
                     href="https://derivalab.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Open DerivaLab live demo"
                   >
                     Live demo
                   </a>
@@ -144,6 +151,7 @@
                     href="https://github.com/lu-alvz-dev/derivalab"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="View DerivaLab repository on GitHub"
                   >
                     GitHub
                   </a>
@@ -152,6 +160,8 @@
                     class="project-details-button"
                     type="button"
                     data-project="derivalab"
+                    aria-haspopup="dialog"
+                    aria-controls="project-modal"
                   >
                     Case study
                   </button>
@@ -181,7 +191,10 @@
                   structure.
                 </p>
 
-                <ul class="project-stack" aria-label="Technologies used">
+                <ul
+                  class="project-stack"
+                  aria-label="Technologies used in React Client Dashboard"
+                >
                   <li>React</li>
                   <li>JavaScript</li>
                   <li>REST API</li>
@@ -192,6 +205,7 @@
                     href="https://github.com/lu-alvz-dev/react-client-dashboard"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="View React Client Dashboard repository on GitHub"
                   >
                     GitHub
                   </a>
@@ -200,6 +214,8 @@
                     class="project-details-button"
                     type="button"
                     data-project="react-dashboard"
+                    aria-haspopup="dialog"
+                    aria-controls="project-modal"
                   >
                     Details
                   </button>
@@ -230,7 +246,10 @@
                   behavior.
                 </p>
 
-                <ul class="project-stack" aria-label="Technologies used">
+                <ul
+                  class="project-stack"
+                  aria-label="Technologies used in Frontend Bug Fix and Refactor"
+                >
                   <li>JavaScript</li>
                   <li>HTML</li>
                   <li>CSS</li>
@@ -241,6 +260,7 @@
                     href="https://github.com/lu-alvz-dev/frontend-bugfix-refactor"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="View Frontend Bug Fix and Refactor repository on GitHub"
                   >
                     GitHub
                   </a>
@@ -249,6 +269,8 @@
                     class="project-details-button"
                     type="button"
                     data-project="bugfix-refactor"
+                    aria-haspopup="dialog"
+                    aria-controls="project-modal"
                   >
                     Details
                   </button>
