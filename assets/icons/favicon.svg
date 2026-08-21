@@ -1,0 +1,23 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  role="img"
+  aria-label="Luis Alvarez"
+>
+  <rect
+    width="64"
+    height="64"
+    rx="12"
+    fill="#deded1"
+  />
+
+  <path
+    d="M14 16H20V42H31V48H14V16Z"
+    fill="#503002"
+  />
+
+  <path
+    d="M39 48H33L42 16H49L58 48H52L50 40H41L39 48ZM42.5 34H48.5L45.5 22L42.5 34Z"
+    fill="#503002"
+  />
+</svg>
