@@ -173,42 +173,46 @@ section {
 /* Hero */
 
 .section-hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  padding-top: calc(var(--header-height) + clamp(8rem, 10vw, 12rem));
+  padding-bottom: clamp(8rem, 10vw, 12rem);
 
-  padding-top: calc(var(--header-height) + 6.4rem);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(18rem, 0.7fr);
-  align-items: center;
-  gap: 6.4rem;
+  display: block;
 }
 
 .hero-content {
-  max-width: 76rem;
+  max-width: 92rem;
 }
 
-.hero-eyebrow {
-  margin-bottom: 1.6rem;
+.hero-identity {
+  margin-bottom: 2rem;
 
-  color: var(--color-accent-dark);
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
+.hero-identity span {
+  margin: 0 0.6rem;
+
+  color: var(--color-accent-dark);
+}
+
 .hero-title {
-  max-width: 80rem;
+  max-width: 90rem;
 
   color: var(--color-text);
-  font-size: clamp(4.2rem, 6vw, 7.2rem);
+
+  font-size: clamp(4.4rem, 7vw, 7.6rem);
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.04em;
+  line-height: 1.03;
+  letter-spacing: -0.045em;
 }
 
 .hero-title span {
@@ -216,10 +220,11 @@ section {
 }
 
 .hero-description {
-  max-width: 62rem;
-  margin-top: 2.4rem;
+  max-width: 72rem;
+  margin-top: 2.8rem;
 
   color: var(--color-text-muted);
+
   font-size: 1.9rem;
   line-height: 1.7;
 }
@@ -228,21 +233,42 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 1.2rem;
+
   margin-top: 3.2rem;
 }
 
-.hero-avatar-box {
-  display: flex;
-  justify-content: center;
+.hero-stack {
+  max-width: 92rem;
+
+  margin-top: 6.4rem;
+  padding-top: 2rem;
+
+  border-top: 1px solid var(--color-border);
 }
 
-.hero-avatar {
-  width: 20rem;
-  height: 20rem;
+.hero-stack-label {
+  margin-bottom: 0.6rem;
 
-  object-fit: cover;
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
+  color: var(--color-text-muted);
+
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-stack-list {
+  color: var(--color-text);
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.hero-stack-list span {
+  margin: 0 0.5rem;
+
+  color: var(--color-accent-dark);
 }
 
 /* Buttons */
