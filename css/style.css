@@ -146,7 +146,8 @@ section {
   gap: 2.4rem;
 }
 
-.navbar-links a {
+.navbar-links a,
+.navbar-about-button {
   position: relative;
 
   color: var(--color-text-muted);
@@ -159,12 +160,23 @@ section {
     transform var(--transition-fast);
 }
 
-.navbar-links a:hover {
+.navbar-about-button {
+  padding: 0;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.navbar-links a:hover,
+.navbar-about-button:hover {
   color: var(--color-text);
 }
 
 .navbar-links a:focus-visible,
-.navbar-logo:focus-visible {
+.navbar-logo:focus-visible,
+.navbar-about-button:focus-visible {
   outline: 2px solid var(--color-accent-dark);
   outline-offset: 4px;
   border-radius: 2px;
@@ -620,6 +632,127 @@ section {
   color: var(--color-text);
 }
 
+/* About modal */
+
+.about-modal {
+  width: min(100% - 3.2rem, 82rem);
+  max-height: calc(100vh - 3.2rem);
+
+  padding: 0;
+
+  overflow-y: auto;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+}
+
+.about-modal::backdrop {
+  background-color: rgba(80, 48, 2, 0.35);
+}
+
+.about-modal-content {
+  position: relative;
+
+  padding: 4rem;
+}
+
+.about-profile {
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  align-items: start;
+  gap: 3.2rem;
+}
+
+.about-photo {
+  overflow: hidden;
+
+  width: 14rem;
+  aspect-ratio: 1;
+
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.about-copy {
+  min-width: 0;
+}
+
+.about-title {
+  max-width: 52rem;
+  padding-right: 4rem;
+
+  color: var(--color-text);
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.about-text {
+  max-width: 58rem;
+  margin-top: 1.8rem;
+
+  color: var(--color-text-muted);
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.about-path {
+  max-width: 58rem;
+  margin-top: 2.4rem;
+  padding-top: 1.6rem;
+
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.about-path span {
+  margin: 0 0.5rem;
+
+  color: var(--color-accent-dark);
+}
+
+.about-modal-close {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+
+  width: 3.6rem;
+  height: 3.6rem;
+
+  color: var(--color-text);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  font-size: 2.2rem;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.about-modal-close:hover {
+  background-color: var(--color-background);
+}
+
+.about-modal-close:focus-visible {
+  outline: 2px solid var(--color-accent-dark);
+  outline-offset: 3px;
+}
+
 /* Project modal */
 
 .project-modal {
@@ -792,6 +925,15 @@ section {
     gap: 3.2rem;
     padding: 3.2rem;
   }
+
+.about-profile {
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 2.4rem;
+}
+
+.about-photo {
+  width: 10rem;
+
 }
 
 @media (max-width: 560px) {
@@ -816,9 +958,7 @@ section {
     gap: 0.8rem;
   }
 
-  .navbar-links a {
-    font-size: 1.2rem;
-  }
+
 
   .navbar-external {
     display: none;
@@ -928,6 +1068,39 @@ section {
     align-items: flex-start;
     flex-direction: column;
   }
+
+.navbar-links a,
+.navbar-about-button {
+  font-size: 1.2rem;
+}
+
+.about-modal-content {
+  padding: 3.2rem 2rem;
+}
+
+.about-profile {
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+
+.about-photo {
+  width: 9.6rem;
+}
+
+.about-title {
+  padding-right: 3.6rem;
+
+  font-size: 2.6rem;
+}
+
+.about-text {
+  font-size: 1.5rem;
+}
+
+.about-path {
+  font-size: 1.2rem;
+}
+
 }
 
 @media (prefers-reduced-motion: reduce) {

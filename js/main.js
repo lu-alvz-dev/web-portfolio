@@ -1,3 +1,33 @@
+const aboutModal = document.querySelector("#about-modal");
+const aboutOpenButton = document.querySelector(".navbar-about-button");
+const aboutCloseButton = document.querySelector(".about-modal-close");
+
+let aboutLastFocusedElement = null;
+
+function openAboutModal() {
+  aboutLastFocusedElement = document.activeElement;
+  aboutModal.showModal();
+}
+
+function closeAboutModal() {
+  aboutModal.close();
+}
+
+aboutOpenButton.addEventListener("click", openAboutModal);
+aboutCloseButton.addEventListener("click", closeAboutModal);
+
+aboutModal.addEventListener("click", (event) => {
+  if (event.target === aboutModal) {
+    closeAboutModal();
+  }
+});
+
+aboutModal.addEventListener("close", () => {
+  if (aboutLastFocusedElement) {
+    aboutLastFocusedElement.focus();
+  }
+});
+
 const projectModal = document.querySelector("#project-modal");
 const modalCloseButton = document.querySelector(".modal-close");
 const modalTitle = document.querySelector(".modal-title");

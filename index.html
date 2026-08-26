@@ -32,6 +32,16 @@
         <div class="navbar-links">
           <a href="#work">Work</a>
           <a href="#approach">Approach</a>
+
+          <button
+            class="navbar-about-button"
+            type="button"
+            aria-haspopup="dialog"
+            aria-controls="about-modal"
+          >
+            About
+          </button>
+
           <a href="#contact">Contact</a>
           <a
             class="navbar-external"
@@ -433,6 +443,67 @@
       </div>
     </footer>
 
+    <!-- About modal -->
+    <dialog
+      class="about-modal"
+      id="about-modal"
+      aria-labelledby="about-modal-title"
+    >
+      <div class="about-modal-content">
+        <button
+          class="about-modal-close"
+          type="button"
+          aria-label="Close about"
+        >
+          &times;
+        </button>
+
+        <div class="about-profile">
+          <div class="about-photo">
+            <img
+              src="./assets/images/luis-alvarez.png"
+              alt="Luis Alvarez"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <div class="about-copy">
+            <p class="section-label">About</p>
+
+            <h2 class="about-title" id="about-modal-title">
+              A path shaped by problem solving.
+            </h2>
+
+            <p class="about-text">
+              I came to web development through industrial engineering, teaching
+              mathematics, and technical support — different roles connected by
+              the same habit: understand the problem, make complexity clearer,
+              and find a practical way forward.
+            </p>
+
+            <p class="about-text">
+              Today, I bring that mindset into frontend development. I care
+              about reliable interfaces, clear communication, and learning
+              quickly from feedback. I'm looking to contribute in a
+              collaborative team, adapt to its engineering standards, and keep
+              growing through real product work.
+            </p>
+
+            <p class="about-path">
+              Industrial Engineering
+              <span aria-hidden="true">·</span>
+              Teaching
+              <span aria-hidden="true">·</span>
+              IT Support
+              <span aria-hidden="true">·</span>
+              Web Development
+            </p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
     <!-- Project details modal -->
     <dialog
       class="project-modal"
@@ -451,7 +522,6 @@
         <p class="section-label">Project details</p>
 
         <h2 class="modal-title" id="project-modal-title"></h2>
-
         <div class="modal-body"></div>
       </div>
     </dialog>
