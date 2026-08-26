@@ -926,14 +926,14 @@ section {
     padding: 3.2rem;
   }
 
-.about-profile {
-  grid-template-columns: 10rem minmax(0, 1fr);
-  gap: 2.4rem;
-}
+  .about-profile {
+    grid-template-columns: 10rem minmax(0, 1fr);
+    gap: 2.4rem;
+  }
 
-.about-photo {
-  width: 10rem;
-
+  .about-photo {
+    width: 10rem;
+  }
 }
 
 @media (max-width: 560px) {
@@ -957,8 +957,6 @@ section {
   .navbar-links {
     gap: 0.8rem;
   }
-
-
 
   .navbar-external {
     display: none;
@@ -1069,38 +1067,37 @@ section {
     flex-direction: column;
   }
 
-.navbar-links a,
-.navbar-about-button {
-  font-size: 1.2rem;
-}
+  .navbar-links a,
+  .navbar-about-button {
+    font-size: 1.2rem;
+  }
 
-.about-modal-content {
-  padding: 3.2rem 2rem;
-}
+  .about-modal-content {
+    padding: 3.2rem 2rem;
+  }
 
-.about-profile {
-  grid-template-columns: 1fr;
-  gap: 2.4rem;
-}
+  .about-profile {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
 
-.about-photo {
-  width: 9.6rem;
-}
+  .about-photo {
+    width: 9.6rem;
+  }
 
-.about-title {
-  padding-right: 3.6rem;
+  .about-title {
+    padding-right: 3.6rem;
 
-  font-size: 2.6rem;
-}
+    font-size: 2.6rem;
+  }
 
-.about-text {
-  font-size: 1.5rem;
-}
+  .about-text {
+    font-size: 1.5rem;
+  }
 
-.about-path {
-  font-size: 1.2rem;
-}
-
+  .about-path {
+    font-size: 1.2rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
