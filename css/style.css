@@ -701,7 +701,7 @@ section {
 }
 
 .about-modal::backdrop {
-  background-color: rgba(--color-backdrop);
+  background-color: var(--color-backdrop);
 }
 
 .about-modal-content {
