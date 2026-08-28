@@ -1,3 +1,55 @@
+// Theme
+
+const themeToggle = document.querySelector(".theme-toggle");
+const themeToggleText = document.querySelector(".theme-toggle-text");
+
+const systemThemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+function updateThemeControl(theme) {
+  const isDark = theme === "dark";
+
+  themeToggleText.textContent = isDark ? "Light" : "Dark";
+
+  themeToggle.setAttribute(
+    "aria-label",
+    isDark ? "Switch to light mode" : "Switch to dark mode",
+  );
+}
+
+function applyTheme(theme, persist = false) {
+  document.documentElement.dataset.theme = theme;
+
+  updateThemeControl(theme);
+
+  if (persist) {
+    localStorage.setItem("portfolio-theme", theme);
+  }
+}
+
+const initialTheme = document.documentElement.dataset.theme ?? "light";
+
+updateThemeControl(initialTheme);
+
+themeToggle.addEventListener("click", () => {
+  const currentTheme = document.documentElement.dataset.theme;
+
+  const nextTheme = currentTheme === "dark" ? "light" : "dark";
+
+  applyTheme(nextTheme, true);
+});
+
+systemThemeQuery.addEventListener("change", (event) => {
+  const savedTheme = localStorage.getItem("portfolio-theme");
+
+  if (savedTheme) {
+    return;
+  }
+
+  applyTheme(event.matches ? "dark" : "light");
+});
+
+// About modal
+
 const aboutModal = document.querySelector("#about-modal");
 const aboutOpenButton = document.querySelector(".navbar-about-button");
 const aboutCloseButton = document.querySelector(".about-modal-close");
@@ -27,6 +79,8 @@ aboutModal.addEventListener("close", () => {
     aboutLastFocusedElement.focus();
   }
 });
+
+// Project modal
 
 const projectModal = document.querySelector("#project-modal");
 const modalCloseButton = document.querySelector(".modal-close");
