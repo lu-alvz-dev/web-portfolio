@@ -2,7 +2,7 @@
 
 Personal portfolio showcasing selected projects and my approach to building, debugging, and improving web applications.
 
-I'm a **self-taught full-stack web developer** currently focused on **Junior Frontend Developer opportunities**. My main frontend tools are React, JavaScript, HTML, and CSS, with practical backend experience using Node.js, Express, REST APIs, and PostgreSQL.
+I'm a **self-taught Junior Web Developer** focused on frontend development. My main frontend tools are React, JavaScript, HTML, and CSS, with practical backend experience using Node.js, Express, REST APIs, and PostgreSQL.
 
 ## About This Portfolio
 
@@ -207,7 +207,7 @@ Across these projects, I am developing my ability to:
 
 ## Current Goal
 
-I'm looking for an opportunity as a **Junior Frontend Developer** where I can contribute to a professional development team, continue improving my React and JavaScript skills, and apply the full-stack knowledge I have developed through independent projects.
+I'm looking for a **Junior Web Developer** opportunity with a frontend focus, where I can contribute with React and JavaScript, adapt to a professional team's engineering practices, and continue growing my backend knowledge through real product work.
 
 ## Connect
 
