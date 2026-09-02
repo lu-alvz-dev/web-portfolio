@@ -992,6 +992,8 @@ section {
     gap: 0.8rem;
   }
 
+  .navbar-links a[href="#approach"],
+  .navbar-links a[href="#contact"],
   .navbar-external {
     display: none;
   }
