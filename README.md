@@ -2,6 +2,8 @@
 
 Personal portfolio showcasing selected projects and my approach to building, debugging, and improving web applications.
 
+**Live Portfolio:** [lu-alvz-dev.vercel.app](https://lu-alvz-dev.vercel.app)
+
 I'm a **self-taught Junior Web Developer** focused on frontend development. My main frontend tools are React, JavaScript, HTML, and CSS, with practical backend experience using Node.js, Express, REST APIs, and PostgreSQL.
 
 ## About This Portfolio
