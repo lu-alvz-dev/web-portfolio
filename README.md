@@ -1,10 +1,10 @@
-# Luis Alvarez — Web Developer Portfolio
+# Luis Alvarez — Junior Full-Stack Developer Portfolio
 
 Personal portfolio showcasing selected projects and my approach to building, debugging, and improving web applications.
 
 **Live Portfolio:** [lu-alvz-dev.vercel.app](https://lu-alvz-dev.vercel.app)
 
-I'm a **self-taught Junior Web Developer** focused on frontend development. My main frontend tools are React, JavaScript, HTML, and CSS, with practical backend experience using Node.js, Express, REST APIs, and PostgreSQL.
+I'm a **self-taught junior full-stack developer**. I build React interfaces and Node.js/Express APIs backed by PostgreSQL, with experience integrating REST endpoints, debugging, and improving existing code.
 
 ## About This Portfolio
 
@@ -22,7 +22,7 @@ The goal is to keep the interface simple, accessible, responsive, and focused on
 - Reduced-motion support
 - Responsive project layouts for desktop, tablet, and mobile
 - Minimal visual system based on typography, spacing, borders, and a small color palette
-- No frontend frameworks or CSS libraries
+- No JavaScript frameworks or CSS libraries
 
 ## Featured Projects
 
@@ -30,7 +30,7 @@ The goal is to keep the interface simple, accessible, responsive, and focused on
 
 **Full-stack calculus learning platform**
 
-DerivaLab is my main portfolio project. It combines a React frontend with a Node.js and Express backend and PostgreSQL persistence.
+DerivaLab is my main portfolio project. It combines a React client with a Node.js and Express server and PostgreSQL persistence.
 
 The application includes:
 
@@ -52,7 +52,7 @@ The application includes:
 
 ### React Client Dashboard
 
-**Frontend project focused on API integration and UI state**
+**React project focused on API integration and UI state**
 
 A React dashboard that retrieves users from an external REST API and provides a searchable interface.
 
@@ -71,11 +71,11 @@ The project focuses on:
 
 ---
 
-### Frontend Bug Fix & Refactor
+### Client-side Bug Fix & Refactor
 
 **Debugging and maintenance exercise**
 
-A project designed around working with an existing frontend codebase rather than building an application from scratch.
+A project designed around working with an existing JavaScript UI codebase rather than building an application from scratch.
 
 The workflow includes:
 
@@ -105,7 +105,7 @@ It is also an opportunity for me to continue strengthening my experience with Ty
 
 ## Skills Represented
 
-### Frontend
+### Client-side
 
 - HTML5
 - CSS3
@@ -116,7 +116,7 @@ It is also an opportunity for me to continue strengthening my experience with Ty
 - UI state handling
 - Accessibility fundamentals
 
-### Backend
+### Backend/Server and data
 
 - Node.js
 - Express
@@ -209,7 +209,7 @@ Across these projects, I am developing my ability to:
 
 ## Current Goal
 
-I'm looking for a **Junior Web Developer** opportunity with a frontend focus, where I can contribute with React and JavaScript, adapt to a professional team's engineering practices, and continue growing my backend knowledge through real product work.
+I'm seeking a **Junior / Entry-Level Full-Stack Developer** role on a fully remote team. I can contribute with React, JavaScript, Node.js, Express, and PostgreSQL while adopting the team's engineering practices and growing through real product work.
 
 ## Connect
 

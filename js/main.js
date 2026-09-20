@@ -108,13 +108,13 @@ const projectDetails = {
         <li>Automated feedback for common differentiation errors.</li>
         <li>Teacher and student dashboard workflows.</li>
         <li>Persistent data using PostgreSQL.</li>
-        <li>REST API integration between the React frontend and Express backend.</li>
+        <li>REST API integration between the React client and Express server.</li>
       </ul>
 
       <h3>Engineering focus</h3>
       <p>
         This project helped me work across the complete application flow:
-        frontend state, API requests, backend services, database data, and
+        React state, API requests, Express services, PostgreSQL data, and
         deployment.
       </p>
     `,
@@ -130,7 +130,7 @@ const projectDetails = {
         dashboard.
       </p>
 
-      <h3>Frontend focus</h3>
+      <h3>React & API focus</h3>
       <ul>
         <li>Fetch data from an external REST API.</li>
         <li>Handle loading and error states.</li>
@@ -151,7 +151,7 @@ const projectDetails = {
     content: `
       <h3>Project goal</h3>
       <p>
-        This project simulates working with an existing frontend codebase
+        This project simulates working with an existing JavaScript UI codebase
         instead of building an application from scratch.
       </p>
 
