@@ -95,29 +95,59 @@ const projectDetails = {
   derivalab: {
     title: "DerivaLab",
     content: `
-      <h3>What it solves</h3>
-      <p>
-        DerivaLab is a full-stack calculus learning platform designed to
-        support exercise practice, automated feedback, and learning progress
-        tracking.
-      </p>
+    <h3>What it solves</h3>
+    <p>
+      DerivaLab is a full-stack calculus learning platform designed to support
+      exercise practice, automated feedback, and learning progress tracking.
+    </p>
 
-      <h3>What I built</h3>
-      <ul>
-        <li>Exercise generation and answer validation.</li>
-        <li>Automated feedback for common differentiation errors.</li>
-        <li>Teacher and student dashboard workflows.</li>
-        <li>Persistent data using PostgreSQL.</li>
-        <li>REST API integration between the React client and Express server.</li>
-      </ul>
+    <h3>Architecture</h3>
+    <p>
+      The application is structured as a separated frontend and backend system:
+      React with Vite on Vercel communicates through a REST API with a Node.js
+      and Express backend on Render, which handles PostgreSQL access through
+      Neon.
+    </p>
 
-      <h3>Engineering focus</h3>
-      <p>
-        This project helped me work across the complete application flow:
-        React state, API requests, Express services, PostgreSQL data, and
-        deployment.
-      </p>
-    `,
+    <h3>Engineering decisions</h3>
+    <ul>
+      <li>
+        Business logic for exercise generation, mathematical validation, and
+        feedback is handled on the backend rather than inside the React UI.
+      </li>
+      <li>
+        The feedback engine was redesigned to identify evidence of the
+        underlying error before classifying it, avoiding incorrect feedback
+        caused by rule-order dependencies.
+      </li>
+      <li>
+        Authentication uses JWT for authenticated sessions and bcryptjs for
+        password hashing, while PostgreSQL provides persistent user and
+        application data.
+      </li>
+      <li>
+        Teacher and student workflows use role-aware access and separate
+        application experiences.
+      </li>
+    </ul>
+
+    <h3>Production debugging</h3>
+    <p>
+      During deployment, direct navigation to React Router routes returned
+      404 errors on Vercel while internal navigation continued to work.
+      The issue was identified as SPA hosting configuration rather than a
+      React component or backend problem. A Vercel rewrite was added so
+      application routes resolve through the frontend entry point.
+    </p>
+
+    <h3>What this project demonstrates</h3>
+    <p>
+      DerivaLab demonstrates my ability to work across the full application
+      flow: React UI, REST APIs, backend business logic, authentication,
+      PostgreSQL persistence, deployment configuration, and production
+      debugging.
+    </p>
+  `,
   },
 
   "react-dashboard": {
